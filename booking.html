@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book A Session | Kahatah Studios | Karatina Town, Nyeri County</title>
+  <meta name="description" content="Reserve your photography session with Kahatah Studios in Karatina Town, Nyeri County. Real-time estimate in KES, instant confirmation, and direct WhatsApp sync with CEO Kahatah Finnest (0115824621).">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Kahatah Studios Home">
+        <span class="brand-name">KAHATAH STUDIOS</span>
+        <span class="brand-subtitle">THE HOME OF QUALITY ASSURANCE</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="experience.html" class="nav-link">The Experience</a></li>
+          <li><a href="about.html" class="nav-link">About CEO</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact &amp; Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" title="Toggle Obsidian / Light theme" aria-label="Toggle Theme">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+
+        <button class="icon-btn" id="openPortalBtn" title="View Saved Bookings / Studio Portal" aria-label="Open Studio Portal">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+        </button>
+
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> <span>/</span> <span>Booking Studio</span>
+        </div>
+        <div class="section-badge">Live Reservation &bull; Karatina Town</div>
+        <h1 class="page-banner-title">Book A <span class="italic">Session</span></h1>
+        <p class="page-banner-subtitle">
+          Secure your session with Kahatah Studios in Karatina Town or on location in Nyeri County. Real-time estimate &amp; instant WhatsApp confirmation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" style="padding-top: 50px;">
+      <div class="container">
+        <div class="booking-layout">
+          <!-- Left: The Interactive Form -->
+          <div class="booking-card">
+            <h3>Reserve Your Creative Date</h3>
+            <p class="subtitle">Please provide your details and vision. CEO Kahatah Finnest and team will reach out promptly to confirm.</p>
+
+            <form id="bookingForm">
+              <div class="form-grid">
+                <!-- Package Selection -->
+                <div class="form-group full-width">
+                  <label for="bookingPackageSelect" class="form-label">Chosen Package / Experience</label>
+                  <select id="bookingPackageSelect" class="form-select" required>
+                    <option value="portrait">The Executive Portrait — Individual Collection (KSh 2,400)</option>
+                    <option value="signature" selected>The Signature Love â€” Couples &amp; Engagement (KSh 12,000)</option>
+                    <option value="wedding">The Grand Royal Wedding â€” Full Wedding Luxury (KSh 45,000)</option>
+                    <option value="commercial">Commercial Gala &amp; Corporate (KSh 25,000)</option>
+                  </select>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="form-group">
+                  <label for="bookingDate" class="form-label">Preferred Session Date</label>
+                  <input type="date" id="bookingDate" class="form-input" required>
+                </div>
+
+                <!-- Location Preference -->
+                <div class="form-group">
+                  <label for="locationPref" class="form-label">Shoot Location / Setting</label>
+                  <select id="locationPref" class="form-select">
+                    <option value="Kahatah Studios (Karatina Town Studio)">Kahatah Studios (Karatina Town Studio)</option>
+                    <option value="Karatina Town &amp; Vicinity Outdoor">Karatina Town &amp; Vicinity Outdoor</option>
+                    <option value="Nyeri County / Mt. Kenya Scenic Outdoors">Nyeri County / Mt. Kenya Scenic Outdoors</option>
+                    <option value="Wedding Venue (Nyeri / Central Kenya)">Wedding Venue (Nyeri / Central Kenya)</option>
+                    <option value="Nairobi / Nationwide Travel">Nairobi / Nationwide Travel</option>
+                  </select>
+                </div>
+
+                <!-- Time Slot Options -->
+                <div class="form-group full-width">
+                  <label class="form-label">Preferred Light / Time of Day</label>
+                  <div class="time-slot-grid">
+                    <div>
+                      <input type="radio" name="timeSlot" id="slotMorning" value="Morning Light (08:00 AM)" class="slot-radio">
+                      <label for="slotMorning" class="slot-label">
+                        <span class="slot-time">08:00 AM</span>
+                        <span class="slot-desc">Crisp Morning Light</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="timeSlot" id="slotMidday" value="Midday Studio (01:00 PM)" class="slot-radio">
+                      <label for="slotMidday" class="slot-label">
+                        <span class="slot-time">01:00 PM</span>
+                        <span class="slot-desc">Controlled Studio Flash</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="timeSlot" id="slotGolden" value="Golden Hour (05:30 PM)" class="slot-radio" checked>
+                      <label for="slotGolden" class="slot-label">
+                        <span class="slot-time">05:30 PM</span>
+                        <span class="slot-desc">Sunset Golden Hour</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="timeSlot" id="slotTwilight" value="Twilight & Night (08:00 PM)" class="slot-radio">
+                      <label for="slotTwilight" class="slot-label">
+                        <span class="slot-time">08:00 PM</span>
+                        <span class="slot-desc">Cinematic Twilight / Gala</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Client Name -->
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Full Name</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="e.g. Grace Wambui" required>
+                </div>
+
+                <!-- Client Email -->
+                <div class="form-group">
+                  <label for="clientEmail" class="form-label">Email Address</label>
+                  <input type="email" id="clientEmail" class="form-input" placeholder="grace@example.com" required>
+                </div>
+
+                <!-- Client Phone -->
+                <div class="form-group">
+                  <label for="clientPhone" class="form-label">Phone / WhatsApp Number</label>
+                  <input type="tel" id="clientPhone" class="form-input" placeholder="0115824621" required>
+                </div>
+
+                <!-- Instagram Handle -->
+                <div class="form-group">
+                  <label for="clientIg" class="form-label">Instagram / Social Handle</label>
+                  <input type="text" id="clientIg" class="form-input" placeholder="@yourhandle (optional)">
+                </div>
+
+                <!-- Vision & Notes -->
+                <div class="form-group full-width">
+                  <label for="clientNotes" class="form-label">Your Vision &amp; Special Requests</label>
+                  <textarea id="clientNotes" class="form-textarea" rows="4" placeholder="Tell us about your wedding, concept, preferred outfits, or any special requests..."></textarea>
+                </div>
+              </div>
+
+              <!-- Add-ons in Booking -->
+              <div style="margin-bottom: 24px;">
+                <label class="form-label" style="display: block; margin-bottom: 12px;">Add Optional Services:</label>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                  <label class="addon-label" style="padding: 10px 14px;">
+                    <div class="addon-checkbox-wrap">
+                      <input type="checkbox" class="addon-checkbox" data-name="Drone Aerial 4K Photography" data-price-kes="5000">
+                      <span style="font-size: 0.85rem;">Drone 4K (+KSh 5,000)</span>
+                    </div>
+                  </label>
+                  <label class="addon-label" style="padding: 10px 14px;">
+                    <div class="addon-checkbox-wrap">
+                      <input type="checkbox" class="addon-checkbox" data-name="Handcrafted Leather Heirloom Album" data-price-kes="8000">
+                      <span style="font-size: 0.85rem;">Heirloom Album (+KSh 8,000)</span>
+                    </div>
+                  </label>
+                  <label class="addon-label" style="padding: 10px 14px;">
+                    <div class="addon-checkbox-wrap">
+                      <input type="checkbox" class="addon-checkbox" data-name="Additional Shooting Hour" data-price-kes="3000">
+                      <span style="font-size: 0.85rem;">Extra Hour (+KSh 3,000)</span>
+                    </div>
+                  </label>
+                  <label class="addon-label" style="padding: 10px 14px;">
+                    <div class="addon-checkbox-wrap">
+                      <input type="checkbox" class="addon-checkbox" data-name="48-Hour Rush Delivery" data-price-kes="4000">
+                      <span style="font-size: 0.85rem;">48h Rush (+KSh 4,000)</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBookingBtn">
+                <span>Confirm &amp; Reserve Date</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Live Summary Sticky Sidebar -->
+          <div class="booking-summary-sidebar">
+            <div class="summary-header">
+              <span style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-gold); font-weight: 600;">Real-Time Estimate</span>
+              <h4>Session Summary</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Kahatah Studios &bull; Karatina Town</p>
+            </div>
+
+            <div class="summary-row">
+              <span class="label">Package:</span>
+              <span class="val" id="summaryPackageName">The Signature Love</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Base Investment:</span>
+              <span class="val" id="summaryPackagePrice">KSh 12,000</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Session Duration:</span>
+              <span class="val" id="summaryDuration">2.5 Hours</span>
+            </div>
+            <div class="summary-row">
+              <span class="label">Selected Add-Ons:</span>
+              <span class="val" id="summaryAddons">None</span>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">
+              <strong>Included Deliverables:</strong>
+              <div id="summaryInclusions" style="color: var(--text-main); margin-top: 4px; line-height: 1.5;">
+                40 Retouched Images â€¢ 2 Outfits â€¢ Drone Shots â€¢ Quality Assured
+              </div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <span class="total-label">Estimated Total:</span>
+              <span class="total-amount" id="summaryGrandTotal">KSh 12,000</span>
+            </div>
+
+            <p style="font-size: 0.75rem; color: var(--text-dim); line-height: 1.5;">
+              * The Home of Quality Assurance guarantee. Deposit is finalized upon date review with CEO Kahatah Finnest.
+            </p>
+
+            <div class="trust-badges">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>The Home of Quality Assurance Warranty</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>Direct WhatsApp Contact: 0115824621</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                <span>Instant Confirmation &amp; Calendar (.ics)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-name">KAHATAH STUDIOS</span>
+            <span class="brand-subtitle">THE HOME OF QUALITY ASSURANCE</span>
+          </a>
+          <p>
+            Karatina Town, Nyeri County. Led by CEO Kahatah Finnest. Premier photography and cinema for weddings, portraits, and commercial assignments.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-gold); margin-bottom: 16px;">
+            ðŸ“ž <strong>0115824621</strong> &bull; WhatsApp Active
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="packages.html">Packages &amp; Rates</a></li>
+            <li><a href="experience.html">The Experience</a></li>
+            <li><a href="about.html">About CEO</a></li>
+            <li><a href="contact.html">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Weddings &amp; Nuptials</a></li>
+            <li><a href="portfolio.html">Studio Portraits &amp; Headshots</a></li>
+            <li><a href="portfolio.html">Fashion &amp; Editorial</a></li>
+            <li><a href="portfolio.html">Events &amp; Galas</a></li>
+            <li><a href="portfolio.html">Karatina &amp; Mt. Kenya Shoots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Connected</h5>
+          <p>Get exclusive updates on mini-sessions and wedding dates directly from Kahatah Studios.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="text" class="newsletter-input" placeholder="Your phone or email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Kahatah Studios &bull; CEO Kahatah Finnest &bull; Karatina Town, Nyeri County. The Home of Quality Assurance.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="packages.html">Investment</a>
+          <a href="contact.html">Location</a>
+          <a href="tel:0115824621">0115824621</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Confirmation Modal -->
+  <dialog class="modal-dialog" id="confirmationDialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--gold-gradient); display: flex; align-items: center; justify-content: center; color: #000;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <h3 style="font-size: 1.6rem;">Reservation Received!</h3>
+        </div>
+        <button class="icon-btn" onclick="document.getElementById('confirmationDialog').close()" aria-label="Close">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Thank you, <strong id="modalClientName" style="color: var(--text-main);"></strong>. Your session reservation has been logged at <strong>Kahatah Studios (Karatina Town)</strong> â€” The Home of Quality Assurance.
+      </p>
+
+      <div class="booking-ref-box">
+        <span style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); display: block; margin-bottom: 4px;">Official Reference Number</span>
+        <span class="ref-code" id="modalRefCode">KHT-2026-7842</span>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 24px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Selected Package:</span>
+          <strong id="modalPackage" style="color: var(--text-main);">The Signature Love</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Date &amp; Light Slot:</span>
+          <span id="modalDateTime" style="color: var(--text-main);">2026-10-15 â€¢ Golden Hour</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Estimated Total:</span>
+          <strong id="modalTotal" style="color: var(--text-gold); font-size: 1.1rem;">KSh 12,000</strong>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-full" id="whatsappConfirmBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.17-1.31C8.6 21.48 10.25 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm.02 18c-1.57 0-3.08-.43-4.39-1.2l-.31-.18-3.23.82.86-3.13-.2-.33A7.95 7.95 0 0 1 4.02 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-6.19c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42l-.46-.01c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.59 4.12 3.63.58.25 1.03.39 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg>
+          Send Reservation to WhatsApp (0115824621)
+        </a>
+
+        <button class="btn btn-outline btn-full" id="downloadIcsBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+          Add to Apple / Google Calendar (.ics)
+        </button>
+
+        <button class="btn btn-gold-outline btn-full" onclick="document.getElementById('confirmationDialog').close()">
+          Done &amp; Return to Website
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Studio Portal Dialog -->
+  <dialog class="modal-dialog" id="portalDialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(212,175,55,0.15); display: flex; align-items: center; justify-content: center; color: var(--text-gold);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+          </div>
+          <h3 style="font-size: 1.5rem;">Kahatah Studios Docket</h3>
+        </div>
+        <button class="icon-btn" id="portalClose" aria-label="Close Portal">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+        Local reservation registry stored safely in your browser session for <strong>Kahatah Studios (Karatina Town)</strong>.
+      </p>
+
+      <div id="portalBookingsList" style="max-height: 380px; overflow-y: auto; margin-bottom: 20px;"></div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <button class="btn btn-sm btn-outline" id="clearBookingsBtn" style="color: #ff6b6b; border-color: rgba(255,107,107,0.3);">
+          Clear Local Records
+        </button>
+        <button class="btn btn-sm btn-primary" onclick="document.getElementById('portalDialog').close()">
+          Close
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

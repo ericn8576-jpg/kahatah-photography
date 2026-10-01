@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Portfolio | Kahatah Studios | Karatina Town, Nyeri County</title>
+  <meta name="description" content="Explore the portfolio of Kahatah Studios in Karatina Town, Nyeri County. High-fashion editorial, romantic weddings, and studio portraiture by CEO Kahatah Finnest. The Home of Quality Assurance.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Kahatah Studios Home">
+        <span class="brand-name">KAHATAH STUDIOS</span>
+        <span class="brand-subtitle">THE HOME OF QUALITY ASSURANCE</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="experience.html" class="nav-link">The Experience</a></li>
+          <li><a href="about.html" class="nav-link">About CEO</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact &amp; Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="themeToggle" title="Toggle Obsidian / Light theme" aria-label="Toggle Theme">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+
+        <!-- Studio Portal / My Bookings -->
+        <button class="icon-btn" id="openPortalBtn" title="View Saved Bookings / Studio Portal" aria-label="Open Studio Portal">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+        </button>
+
+        <!-- Primary CTA -->
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> <span>/</span> <span>Portfolio</span>
+        </div>
+        <div class="section-badge">Master Gallery &bull; Karatina Town</div>
+        <h1 class="page-banner-title">The Curated <span class="italic">Portfolio</span></h1>
+        <p class="page-banner-subtitle">
+          Real photography from Kahatah Studios. Click any image to examine camera settings, lens choices, and full high-resolution details.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section class="portfolio-section" style="padding-top: 50px;">
+      <div class="container">
+        <!-- Filter Navigation -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="weddings">Weddings &amp; Love</button>
+          <button class="filter-btn" data-filter="editorial">Editorial &amp; Fashion</button>
+          <button class="filter-btn" data-filter="portraits">Portraits &amp; Studio</button>
+          <button class="filter-btn" data-filter="couples">Couples &amp; Engagements</button>
+          <button class="filter-btn" data-filter="events">Events &amp; Galas</button>
+        </div>
+
+        <!-- Dynamic Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Rendered dynamically by app.js using user pictures -->
+        </div>
+
+        <!-- Callout Banner -->
+        <div style="margin-top: 80px; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 48px; text-align: center;">
+          <div class="section-badge">Love What You See?</div>
+          <h3 style="font-size: 2.2rem; margin-bottom: 12px;">Bring Your Vision to Life at Kahatah Studios</h3>
+          <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 28px auto; font-size: 1rem;">
+            Whether it's a studio photoshoot in Karatina Town or wedding coverage across Nyeri County, experience the Home of Quality Assurance.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="booking.html" class="btn btn-primary btn-lg">Book Your Session</a>
+            <a href="packages.html" class="btn btn-outline btn-lg">View Investment Packages</a>
+            <a href="https://wa.me/254115824621" target="_blank" rel="noopener" class="btn btn-gold-outline btn-lg">WhatsApp (0115824621)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-name">KAHATAH STUDIOS</span>
+            <span class="brand-subtitle">THE HOME OF QUALITY ASSURANCE</span>
+          </a>
+          <p>
+            Karatina Town, Nyeri County. Led by CEO Kahatah Finnest. Premier photography and cinema for weddings, portraits, and commercial assignments.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-gold); margin-bottom: 16px;">
+            📞 <strong>0115824621</strong> &bull; WhatsApp Active
+          </div>
+          <div class="social-links">
+            <a href="https://wa.me/254115824621" target="_blank" rel="noopener" class="social-btn" title="WhatsApp Kahatah Studios" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.17-1.31C8.6 21.48 10.25 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm.02 18c-1.57 0-3.08-.43-4.39-1.2l-.31-.18-3.23.82.86-3.13-.2-.33A7.95 7.95 0 0 1 4.02 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-6.19c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42l-.46-.01c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.59 4.12 3.63.58.25 1.03.39 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/search/top?q=kahatah+finest+photography" target="_blank" rel="noopener" class="social-btn" title="Facebook: Kahatah Finest Photography" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/kahatahphotography" target="_blank" rel="noopener" class="social-btn" title="Instagram: @kahatahphotography" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@kahatah_thee_finest" target="_blank" rel="noopener" class="social-btn" title="TikTok: @kahatah_thee_finest" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.26 8.26 0 0 0 4.83 1.55V6.77a4.86 4.86 0 0 1-1.06-.08z"/></svg>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kahatah+Studios+Karatina+Town+Nyeri+County+Kenya" target="_blank" rel="noopener" class="social-btn" title="Get Directions on Google Maps" aria-label="Google Maps">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Curated Portfolio</a></li>
+            <li><a href="packages.html">Packages &amp; Rates</a></li>
+            <li><a href="experience.html">The Experience</a></li>
+            <li><a href="about.html">About CEO Kahatah Finnest</a></li>
+            <li><a href="contact.html">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Studio Services</h5>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Weddings &amp; Nuptials</a></li>
+            <li><a href="portfolio.html">Studio Portraits &amp; Headshots</a></li>
+            <li><a href="portfolio.html">Fashion &amp; Editorial</a></li>
+            <li><a href="portfolio.html">Events &amp; Galas</a></li>
+            <li><a href="portfolio.html">Karatina &amp; Mt. Kenya Shoots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Connected</h5>
+          <p>Get exclusive updates on mini-sessions and wedding dates directly from Kahatah Studios.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="text" class="newsletter-input" placeholder="Your phone or email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Kahatah Studios &bull; CEO Kahatah Finnest &bull; Karatina Town, Nyeri County. The Home of Quality Assurance.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="packages.html">Investment</a>
+          <a href="contact.html">Location</a>
+          <a href="tel:0115824621">0115824621</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <dialog class="lightbox-dialog" id="lightboxDialog">
+    <div class="lightbox-content">
+      <button class="icon-btn lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+
+      <div class="lightbox-stage">
+        <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Photo">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+
+        <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Photo">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+
+        <div class="lightbox-controls">
+          <button class="btn btn-sm btn-outline" id="lightboxZoom" style="background: rgba(0,0,0,0.5);">Zoom 1.6x</button>
+        </div>
+      </div>
+
+      <!-- Lightbox Sidebar Metadata -->
+      <div class="lightbox-sidebar">
+        <div>
+          <span style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-gold); font-weight: 600;" id="lightboxCat">PORTFOLIO</span>
+          <h3 style="font-size: 1.8rem; margin: 8px 0 12px 0;" id="lightboxTitle">Photo Title</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 20px;" id="lightboxDesc">
+            Crafted with passion by Kahatah Studios — The Home of Quality Assurance.
+          </p>
+
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+            <div><strong>Location:</strong> <span id="lightboxLocation" style="color: var(--text-main);">Karatina Town, Nyeri</span></div>
+            <div><strong>Client:</strong> <span id="lightboxClient" style="color: var(--text-main);">Studio Client</span></div>
+            <div><strong>Studio:</strong> <span style="color: var(--text-gold);">Kahatah Studios</span></div>
+          </div>
+
+          <!-- Camera EXIF Breakdown -->
+          <div class="exif-grid">
+            <div class="exif-item">
+              <span class="exif-label">Body</span>
+              <span class="exif-val" id="lightboxCamera">Leica M11</span>
+            </div>
+            <div class="exif-item">
+              <span class="exif-label">Lens</span>
+              <span class="exif-val" id="lightboxLens">Summilux 35mm</span>
+            </div>
+            <div class="exif-item" style="grid-column: span 2;">
+              <span class="exif-label">Exposure &amp; ISO</span>
+              <span class="exif-val" id="lightboxSettings">1/1000s • f/1.4 • ISO 64</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="booking.html" class="btn btn-primary btn-full" id="lightboxBookBtn">
+            Book This Photographic Style
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Studio Portal Dialog -->
+  <dialog class="modal-dialog" id="portalDialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(212,175,55,0.15); display: flex; align-items: center; justify-content: center; color: var(--text-gold);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+          </div>
+          <h3 style="font-size: 1.5rem;">Kahatah Studios Docket</h3>
+        </div>
+        <button class="icon-btn" id="portalClose" aria-label="Close Portal">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+        Local reservation registry stored safely in your browser session for <strong>Kahatah Studios (Karatina Town)</strong>.
+      </p>
+
+      <div id="portalBookingsList" style="max-height: 380px; overflow-y: auto; margin-bottom: 20px;">
+        <!-- Filled dynamically -->
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <button class="btn btn-sm btn-outline" id="clearBookingsBtn" style="color: #ff6b6b; border-color: rgba(255,107,107,0.3);">
+          Clear Local Records
+        </button>
+        <button class="btn btn-sm btn-primary" onclick="document.getElementById('portalDialog').close()">
+          Close
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
